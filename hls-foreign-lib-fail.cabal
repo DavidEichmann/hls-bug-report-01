@@ -1,0 +1,20 @@
+cabal-version:      3.0
+name:               hls-foreign-lib-fail
+version:            0.1.0.0
+-- synopsis:
+-- description:
+author:             David Eichmann
+maintainer:         EichmannD@gmail.com
+-- copyright:
+category:           HLS bug
+build-type:         Simple
+-- extra-source-files:
+
+foreign-library myFlib
+    type: native-shared
+    hs-source-dirs: src
+    other-modules:
+        FLib
+    build-depends:
+        base
+    default-language: GHC2021
